@@ -1,0 +1,7 @@
+{
+  "core": {
+    "radius": {
+      "base": { "value": "0.625rem", "type": "dimension" }
+    }
+  }
+}
