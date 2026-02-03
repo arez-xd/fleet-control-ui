@@ -1,0 +1,10 @@
+{
+  "border": {
+    "width": {
+      "default": { "value": "{core.border.width.hairline}", "type": "dimension" }
+    },
+    "color": {
+      "default": { "value": "{color.divider.default}", "type": "color" }
+    }
+  }
+}
