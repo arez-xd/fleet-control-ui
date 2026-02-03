@@ -1,0 +1,61 @@
+{
+  "type": {
+    "weight": {
+      "regular": { "value": "{core.type.fontWeight.regular}", "type": "fontWeight" },
+      "medium": { "value": "{core.type.fontWeight.medium}", "type": "fontWeight" }
+    },
+
+    "ui": {
+      "h1": {
+        "fontSize": { "value": "{core.type.fontSize.30}", "type": "dimension" },
+        "fontWeight": { "value": "{core.type.fontWeight.medium}", "type": "fontWeight" },
+        "lineHeight": { "value": "{core.type.lineHeight.tight}", "type": "number" }
+      },
+      "h2": {
+        "fontSize": { "value": "{core.type.fontSize.24}", "type": "dimension" },
+        "fontWeight": { "value": "{core.type.fontWeight.medium}", "type": "fontWeight" },
+        "lineHeight": { "value": "{core.type.lineHeight.tight}", "type": "number" }
+      },
+      "h3": {
+        "fontSize": { "value": "{core.type.fontSize.20}", "type": "dimension" },
+        "fontWeight": { "value": "{core.type.fontWeight.medium}", "type": "fontWeight" },
+        "lineHeight": { "value": "{core.type.lineHeight.default}", "type": "number" }
+      },
+      "h4": {
+        "fontSize": { "value": "{core.type.fontSize.18}", "type": "dimension" },
+        "fontWeight": { "value": "{core.type.fontWeight.medium}", "type": "fontWeight" },
+        "lineHeight": { "value": "{core.type.lineHeight.default}", "type": "number" }
+      },
+
+      "body": {
+        "fontSize": { "value": "{core.type.fontSize.16}", "type": "dimension" },
+        "fontWeight": { "value": "{core.type.fontWeight.regular}", "type": "fontWeight" },
+        "lineHeight": { "value": "{core.type.lineHeight.default}", "type": "number" }
+      },
+
+      "label": {
+        "fontSize": { "value": "{core.type.fontSize.14}", "type": "dimension" },
+        "fontWeight": { "value": "{core.type.fontWeight.medium}", "type": "fontWeight" },
+        "lineHeight": { "value": "{core.type.lineHeight.default}", "type": "number" }
+      },
+
+      "caption": {
+        "fontSize": { "value": "{core.type.fontSize.12}", "type": "dimension" },
+        "fontWeight": { "value": "{core.type.fontWeight.regular}", "type": "fontWeight" },
+        "lineHeight": { "value": "{core.type.lineHeight.default}", "type": "number" }
+      },
+
+      "button": {
+        "fontSize": { "value": "{core.type.fontSize.14}", "type": "dimension" },
+        "fontWeight": { "value": "{core.type.fontWeight.medium}", "type": "fontWeight" },
+        "lineHeight": { "value": "{core.type.lineHeight.default}", "type": "number" }
+      },
+
+      "input": {
+        "fontSize": { "value": "{core.type.fontSize.14}", "type": "dimension" },
+        "fontWeight": { "value": "{core.type.fontWeight.regular}", "type": "fontWeight" },
+        "lineHeight": { "value": "{core.type.lineHeight.default}", "type": "number" }
+      }
+    }
+  }
+}
