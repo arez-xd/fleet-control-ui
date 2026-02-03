@@ -1,0 +1,8 @@
+{
+  "radius": {
+    "sm": { "value": "calc({core.radius.base} - 4px)", "type": "dimension" },
+    "md": { "value": "calc({core.radius.base} - 2px)", "type": "dimension" },
+    "lg": { "value": "{core.radius.base}", "type": "dimension" },
+    "xl": { "value": "calc({core.radius.base} + 4px)", "type": "dimension" }
+  }
+}
