@@ -1,1 +1,110 @@
+{
+  "core": {
+    "color": {
+      "neutral": {
+        "white": { "value": "#ffffff", "type": "color" },
+        "black": { "value": "#000000", "type": "color" },
 
+        "bg": {
+          "0": { "value": "#ffffff", "type": "color" },
+          "950": { "value": "#0a0a0f", "type": "color" }
+        },
+
+        "surface": {
+          "0": { "value": "#ffffff", "type": "color" },
+          "1": { "value": "#12121a", "type": "color" }
+        },
+
+        "inset": {
+          "light": { "value": "#f3f3f5", "type": "color" },
+          "dark": { "value": "#1a1a24", "type": "color" }
+        },
+
+        "ink": {
+          "950": { "value": "oklch(0.145 0 0)", "type": "color" },
+          "50": { "value": "#e0e0e5", "type": "color" }
+        },
+
+        "inkMuted": {
+          "600": { "value": "#717182", "type": "color" },
+          "300": { "value": "#a0a0ad", "type": "color" }
+        },
+
+        "line": {
+          "light": { "value": "rgba(0, 0, 0, 0.1)", "type": "color" },
+          "dark": { "value": "#252538", "type": "color" }
+        },
+
+        "tone": {
+          "secondaryLight": { "value": "oklch(0.95 0.0058 264.53)", "type": "color" },
+          "mutedLight": { "value": "#ececf0", "type": "color" },
+          "accentLight": { "value": "#e9ebef", "type": "color" },
+          "switchBgLight": { "value": "#cbced4", "type": "color" },
+
+          "secondaryDark": { "value": "#1a1a24", "type": "color" },
+          "mutedDark": { "value": "#1a1a24", "type": "color" }
+        }
+      },
+
+      "brand": {
+        "primaryLight": { "value": "#030213", "type": "color" },
+        "accentBlue": { "value": "#3a43ff", "type": "color" },
+        "accentViolet": { "value": "#8f3aff", "type": "color" }
+      },
+
+      "danger": {
+        "500Light": { "value": "#d4183d", "type": "color" },
+        "500Dark": { "value": "#e53a3a", "type": "color" }
+      },
+
+      "status": {
+        "idle": { "value": "#6c6ce5", "type": "color" },
+        "printing": { "value": "#3a43ff", "type": "color" },
+        "error": { "value": "#e53a3a", "type": "color" },
+        "maintenance": { "value": "#e5a03a", "type": "color" },
+        "success": { "value": "#10b981", "type": "color" }
+      },
+
+      "chart": {
+        "1Light": { "value": "oklch(0.646 0.222 41.116)", "type": "color" },
+        "2Light": { "value": "oklch(0.6 0.118 184.704)", "type": "color" },
+        "3Light": { "value": "oklch(0.398 0.07 227.392)", "type": "color" },
+        "4Light": { "value": "oklch(0.828 0.189 84.429)", "type": "color" },
+        "5Light": { "value": "oklch(0.769 0.188 70.08)", "type": "color" },
+
+        "1Dark": { "value": "#3a43ff", "type": "color" },
+        "2Dark": { "value": "#22d3ee", "type": "color" },
+        "3Dark": { "value": "#a78bfa", "type": "color" },
+        "4Dark": { "value": "#e5a03a", "type": "color" },
+        "5Dark": { "value": "#10b981", "type": "color" }
+      },
+
+      "sidebar": {
+        "bgLight": { "value": "oklch(0.985 0 0)", "type": "color" },
+        "bgDark": { "value": "#0f0f15", "type": "color" },
+
+        "inkLight": { "value": "oklch(0.145 0 0)", "type": "color" },
+        "inkDark": { "value": "#e0e0e5", "type": "color" },
+
+        "primaryLight": { "value": "#030213", "type": "color" },
+        "primaryDark": { "value": "#3a43ff", "type": "color" },
+
+        "accentLight": { "value": "oklch(0.97 0 0)", "type": "color" },
+        "accentDark": { "value": "#1a1a24", "type": "color" },
+
+        "lineLight": { "value": "oklch(0.922 0 0)", "type": "color" },
+        "lineDark": { "value": "#252538", "type": "color" }
+      },
+
+      "ring": {
+        "light": { "value": "oklch(0.708 0 0)", "type": "color" },
+        "dark": { "value": "#3a43ff", "type": "color" }
+      },
+
+      "gradient": {
+        "start": { "value": "#3a43ff", "type": "color" },
+        "end": { "value": "#8f3aff", "type": "color" }
+      }
+    }
+  }
+}
