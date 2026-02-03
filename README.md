@@ -1,6 +1,6 @@
 # F2 Design System
 
-A design token system for complex, web applications.
+A design token system for complex web applications.
 
 This repository defines the visual foundations of a production UI: color, typography, spacing, radii, borders, and states.  
 It is structured around a clear separation between **core primitives** and **semantic tokens**, with the goal of making the system predictable, maintainable, and safe to evolve.
