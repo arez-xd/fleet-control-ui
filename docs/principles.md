@@ -17,9 +17,9 @@ If a required semantic token does not exist, it should be added.
 
 ---
 
-## 2. Tokens describe intent, not appearance
+## 2. Tokens are intent-driven and semantically defined
 
-Tokens represent meaning, not visual traits.
+They capture semantic meaning, allowing visual traits to remain an implementation detail.
 
 Prefer:
 - `color.status.error`
