@@ -10,7 +10,7 @@ Core tokens define primitive values:
 - color palettes
 - spacing scales
 - typography scales
-- radii and borders
+- radiuses and borders
 
 They contain no UI meaning.
 
