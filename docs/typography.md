@@ -25,7 +25,7 @@ New sizes should not be introduced unless a recurring and well-justified need ap
 
 ## Semantic roles
 
-Typography is consumed via **semantic roles**, not numeric values.
+Typography is applied using **semantic roles**, providing an abstraction over raw numeric values.
 
 UI components reference typography tokens by intent, for example:
 - `type.ui.h3`
