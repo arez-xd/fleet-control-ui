@@ -20,5 +20,4 @@ Variable names match token paths to keep parity between design and code.
 
 ## Source of truth
 
-This repository is the source of truth.
-Figma files reflect it, not the other way around.
+This repository is the single source of truth, while Figma files mirror and derive from it.
