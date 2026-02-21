@@ -1,5 +1,13 @@
 # F2 Design System
 
+![Product](https://img.shields.io/badge/product-fleet--control-black)
+![Architecture](https://img.shields.io/badge/architecture-token--driven-blue)
+![Domain](https://img.shields.io/badge/domain-operational--ui-5E60CE)
+![Theme](https://img.shields.io/badge/theme-dark--first-111111)
+![Structure](https://img.shields.io/badge/structure-core→semantic-success)
+![Scope](https://img.shields.io/badge/scope-product--ui-orange)
+![Version](https://img.shields.io/badge/version-1.0.0-informational)
+
 A design token system for complex web applications.
 
 This repository defines the visual foundations of a production UI: color, typography, spacing, radii, borders, and states.  
