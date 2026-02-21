@@ -6,7 +6,6 @@
 ![Theme](https://img.shields.io/badge/theme-dark--first-111111)
 ![Structure](https://img.shields.io/badge/structure-core→semantic-success)
 ![Scope](https://img.shields.io/badge/scope-product--ui-orange)
-![Version](https://img.shields.io/badge/version-1.0.0-informational)
 
 A design token system for complex web applications.
 
