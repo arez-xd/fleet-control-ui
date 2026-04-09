@@ -1,0 +1,10 @@
+{
+  "stroke": {
+    "width": {
+      "none": { "$value": "{stroke.width.0}", "$type": "number" },
+      "default": { "$value": "{stroke.width.1}", "$type": "number" },
+      "strong": { "$value": "{stroke.width.2}", "$type": "number" },
+      "focus": { "$value": "{stroke.width.2}", "$type": "number" }
+    }
+  }
+}
