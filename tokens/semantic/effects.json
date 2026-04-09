@@ -1,0 +1,19 @@
+{
+  "effects": {
+    "shadow": {
+      "surface": {
+        "elevated": { "$value": "{effects.shadow.sm}", "$type": "shadow" }
+      }
+    },
+    "highlight": {
+      "surface": {
+        "elevated": { "$value": "{effects.highlight.soft}", "$type": "shadow" }
+      }
+    },
+    "overlay": {
+      "scrim": {
+        "modal": { "$value": "{color.overlay.scrim.strong}", "$type": "color" }
+      }
+    }
+  }
+}
