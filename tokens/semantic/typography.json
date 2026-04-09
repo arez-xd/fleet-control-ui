@@ -1,0 +1,66 @@
+{
+  "typography": {
+    "role": {
+      "display": {
+        "fontSize": { "$value": "{typography.fontSize.48}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.500}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.100}", "$type": "number" }
+      },
+      "h1": {
+        "fontSize": { "$value": "{typography.fontSize.30}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.500}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.130}", "$type": "number" }
+      },
+      "h2": {
+        "fontSize": { "$value": "{typography.fontSize.24}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.500}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.130}", "$type": "number" }
+      },
+      "h3": {
+        "fontSize": { "$value": "{typography.fontSize.20}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.500}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.140}", "$type": "number" }
+      },
+      "h4": {
+        "fontSize": { "$value": "{typography.fontSize.18}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.500}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.150}", "$type": "number" }
+      },
+      "body": {
+        "fontSize": { "$value": "{typography.fontSize.16}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.400}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.150}", "$type": "number" }
+      },
+      "label": {
+        "fontSize": { "$value": "{typography.fontSize.14}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.500}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.150}", "$type": "number" }
+      },
+      "button": {
+        "fontSize": { "$value": "{typography.fontSize.14}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.500}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.150}", "$type": "number" }
+      },
+      "buttonCompact": {
+        "fontSize": { "$value": "{typography.fontSize.12}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.500}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.140}", "$type": "number" }
+      },
+      "input": {
+        "fontSize": { "$value": "{typography.fontSize.14}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.400}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.150}", "$type": "number" }
+      },
+      "caption": {
+        "fontSize": { "$value": "{typography.fontSize.12}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.400}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.140}", "$type": "number" }
+      },
+      "metric": {
+        "fontSize": { "$value": "{typography.fontSize.48}", "$type": "number" },
+        "fontWeight": { "$value": "{typography.fontWeight.500}", "$type": "number" },
+        "lineHeight": { "$value": "{typography.lineHeight.100}", "$type": "number" }
+      }
+    }
+  }
+}
