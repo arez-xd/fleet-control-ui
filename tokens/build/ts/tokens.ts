@@ -719,6 +719,82 @@ export const tokens = {
   },
 } as const;
 
+/**
+ * Usage examples from the current dashboard app.
+ *
+ * Example 1: app shell
+ * Before:
+ * <div className="dark min-h-screen bg-background text-foreground" />
+ *
+ * Token mapping:
+ * - bg-background -> semantic.color.bg.canvas
+ * - text-foreground -> semantic.color.text.primary
+ *
+ * Example 2: sidebar shell
+ * Before:
+ * <aside className="border-r border-[#27272a] bg-[#0e0e12]" />
+ *
+ * After intent:
+ * - border color -> semantic.color.border.default
+ * - shell background -> semantic.color.legacy.surface.header
+ *
+ * Example 3: navigation item
+ * Before:
+ * isActive
+ *   ? "bg-[#3a43ff]/12 text-[#8b91ff]"
+ *   : "text-[#71717a] hover:bg-[#1e1e21] hover:text-[#a1a1aa]"
+ *
+ * Token mapping:
+ * - active bg -> semantic.color.sidebar.item.active.bg
+ * - active text -> semantic.color.sidebar.item.active.text
+ * - default text -> semantic.color.sidebar.item.default.text
+ * - hover bg -> semantic.color.sidebar.item.hover.bg
+ * - hover text -> semantic.color.sidebar.item.hover.text
+ *
+ * Example 4: section label
+ * Before:
+ * <p className="text-[11px] text-[#52525b] uppercase tracking-widest" />
+ *
+ * Token mapping:
+ * - text color -> semantic.color.sidebar.section.label
+ * - type role -> semantic.typography.role.overline
+ *
+ * Example 5: footer metadata
+ * Before:
+ * <p className="text-[12px] text-[#a0a0ad]/40">Updated just now</p>
+ *
+ * Token mapping:
+ * - text role -> semantic.typography.role.meta
+ * - base text color -> semantic.color.sidebar.footer.meta
+ *
+ * Example 6: top bar
+ * Before:
+ * <div className="h-[66px] border-b border-[#27272a]" />
+ *
+ * Token mapping:
+ * - height -> semantic.size.topbar.height
+ * - border -> semantic.color.border.default
+ *
+ * Example 7: system notification icons
+ * Before:
+ * { id: 1, color: "#3a43ff" }
+ * { id: 2, color: "#f59e0b" }
+ * { id: 3, color: "#71717a" }
+ *
+ * Token mapping:
+ * - upgrade -> semantic.color.notification.upgrade
+ * - warning -> semantic.color.notification.warning
+ * - info -> semantic.color.notification.info
+ *
+ * Example 8: avatar gradient
+ * Before:
+ * style={{ background: "linear-gradient(180deg, #3a43ff 0%, #8f3aff 100%)" }}
+ *
+ * Token mapping:
+ * - start -> semantic.color.gradient.avatar.start
+ * - end -> semantic.color.gradient.avatar.end
+ */
+
 /** Get a token by dot-path, for example: `semantic.color.text.primary` */
 export function get(path: string, root: unknown = tokens): unknown {
   return path
