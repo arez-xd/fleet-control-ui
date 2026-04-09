@@ -86,21 +86,39 @@ design-system/
 │   ├── core/
 │   │   ├── color.json
 │   │   ├── space.json
+│   │   ├── typography.json
+│   │   ├── size.json
 │   │   ├── radius.json
 │   │   ├── border.json
-│   │   └── typography.json
+│   │   ├── stroke.json
+│   │   └── effects.json
 │   │
-│   ├── color.json
-│   ├── type.json
-│   ├── space.json
-│   ├── radius.json
-│   └── border.json
+│   ├── semantic/
+│   │   ├── color.json
+│   │   ├── space.json
+│   │   ├── typography.json
+│   │   ├── size.json
+│   │   ├── radius.json
+│   │   ├── border.json
+│   │   ├── stroke.json
+│   │   └── effects.json
+│   │
+│   └── build/                    ← Auto-generated artifacts
+│       └── ts/
+│           └── tokens.ts
+│       
+│           
 │
 ├── docs/
 │   ├── principles.md
+│   ├── architecture.md
 │   ├── tokens.md
+│   ├── color-system.md
 │   ├── typography.md
 │   ├── spacing.md
+│   ├── effects.md
+│   ├── data-visualization.md
+│   ├── governance.md
 │   └── components.md
 │
 └── figma/
