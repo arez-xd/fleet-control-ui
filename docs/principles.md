@@ -1,58 +1,48 @@
-# Design System Principles
+# Principles
 
-This document defines the rules that govern the system.
-They are meant to reduce ambiguity and prevent ad-hoc decisions.
+The token system exists to create a stable interface between design decisions, Figma implementation, and product code.
 
----
+## Core ideas
 
-## 1. No raw values in UI code
+- Core tokens contain raw values only.
+- Semantic tokens are the public API.
+- Components consume semantic tokens only.
+- The active system is dark-only and dark-first.
+- Literal colors in Figma are migration debt, not design-system truth.
 
-Components must not use:
-- hex colors
-- pixel values
-- font sizes or weights
-- arbitrary spacing
+## Naming philosophy
 
-If a required semantic token does not exist, it should be added.
+Use names that communicate role and state.
 
----
+Good:
 
-## 2. Tokens are intent-driven and semantically defined
+- `color.text.secondary`
+- `color.interactive.primary.pressed`
+- `space.inset.card`
+- `typography.role.metric`
 
-They capture semantic meaning, allowing visual traits to remain an implementation detail.
+Bad:
 
-Prefer:
-- `color.status.error`
-- `color.bg.subtle`
-- `type.ui.caption`
+- `color.blueButton`
+- `color.sidebarCardBorder`
+- `space.monitoringSectionGapLarge`
 
-Avoid:
-- `color.red`
-- `color.darkGray`
-- `text.small`
+## Product fit
 
----
+This system is optimized for:
 
-## 3. One purpose per token
+- dense dashboards
+- operational monitoring
+- dark surfaces
+- chart-heavy layouts
+- Figma-to-code workflows
 
-A token should exist for a single, clearly defined use case.
+It is not trying to be theme-agnostic or style-neutral. It is intentionally tuned to the current product.
 
-If the same token is used in unrelated contexts, the abstraction is likely wrong and should be split.
+## Migration stance
 
----
+We preserve current visual language where it is already validated in Figma, but we move it under governance:
 
-## 4. States are part of the system
-
-Hover, disabled, selected, focus, and status states are not exceptions.
-If a component has a state, the corresponding tokens must exist.
-
----
-
-## 5. The system grows deliberately
-
-New tokens are introduced when:
-- a new meaning appears
-- a new domain is added
-- a pattern becomes recurring
-
-Single-screen workarounds do not justify new tokens.
+- first legalize recurring physical values in core
+- then map them to semantic roles
+- then bind Figma and components to semantic tokens
