@@ -1,45 +1,140 @@
-# Token Architecture
+# Tokens
 
-The system is composed of two layers: core tokens and semantic tokens.
+Reference and usage rules for the current design-token source of truth.
 
----
+## Format
 
-## Core tokens
+All source tokens use W3C-style fields:
 
-Core tokens define primitive values:
-- color palettes
-- spacing scales
-- typography scales
-- radiuses and borders
-
-They contain no UI meaning.
+- `$value`
+- `$type`
 
 Examples:
-- `core.color.neutral.bg.950`
-- `core.space.4`
-- `core.type.fontSize.16`
-
----
-
-## Semantic tokens
-
-Semantic tokens define how primitives are used in the interface.
-
-They reference core tokens and may vary by theme.
-
-Examples:
-- `color.bg.surface`
-- `color.text.secondary`
-- `color.status.error`
-
----
-
-## Theme resolution
-
-Semantic tokens can resolve differently depending on the theme:
 
 ```json
-"color.bg.surface": {
-  "light": "{core.color.neutral.surface.0}",
-  "dark": "{core.color.neutral.surface.1}"
+{
+  "color": {
+    "base": {
+      "indigo": {
+        "600": {
+          "$value": "#3A43FF",
+          "$type": "color"
+        }
+      }
+    }
+  }
 }
+```
+
+```json
+{
+  "color": {
+    "text": {
+      "secondary": {
+        "$value": "{color.base.neutral.300}",
+        "$type": "color"
+      }
+    }
+  }
+}
+```
+
+## Folder layout
+
+### Core source
+
+- `tokens/core/color.json`
+- `tokens/core/space.json`
+- `tokens/core/typography.json`
+- `tokens/core/size.json`
+- `tokens/core/radius.json`
+- `tokens/core/border.json`
+- `tokens/core/stroke.json`
+- `tokens/core/effects.json`
+
+### Semantic source
+
+- `tokens/semantic/color.json`
+- `tokens/semantic/space.json`
+- `tokens/semantic/typography.json`
+- `tokens/semantic/size.json`
+- `tokens/semantic/radius.json`
+- `tokens/semantic/border.json`
+- `tokens/semantic/stroke.json`
+- `tokens/semantic/effects.json`
+
+### Generated output
+
+- `tokens/build/ts/tokens.ts`
+
+## What belongs where
+
+### Core
+
+Put a token in `core` if it is:
+
+- a physical color
+- a raw alpha color
+- a number scale
+- a raw radius
+- a raw stroke width
+- a raw shadow recipe
+
+### Semantic
+
+Put a token in `semantic` if it expresses:
+
+- UI role
+- state
+- hierarchy
+- intent
+
+## Figma-related constraints
+
+Important rules for future Figma variable generation:
+
+- colors can become `COLOR`
+- numbers can become `FLOAT`
+- `fontFamily` remains source-only and should be skipped in Figma variables
+- shadow composites remain source-only and should be skipped in Figma variables
+- semantic aliases should resolve directly to core whenever possible
+
+## Current token families
+
+### Core
+
+- color
+- space
+- typography
+- size
+- radius
+- border
+- stroke
+- effects
+
+### Semantic
+
+- color
+- space
+- typography
+- size
+- radius
+- border
+- stroke
+- effects
+
+## Migration notes
+
+This token base was created while reverse-engineering an existing dark Figma dashboard.
+
+That means:
+
+- some core families exist to legalize recurring legacy colors
+- some semantic `legacy.*` tokens exist to bridge audited Figma patterns
+- generated artifacts are not yet fully automated
+
+The target end state is still clean:
+
+- governed core primitives
+- semantic roles only in application code and Figma
+- no raw hex usage in audited frames
