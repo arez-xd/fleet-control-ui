@@ -1,121 +1,111 @@
 # Typography
 
-This document defines the typography system used across the product UI.
+Typography rules for a dense dashboard UI with metrics, labels, controls, and operational text.
 
-The goal of the system is to provide a clear, predictable hierarchy for dense, operational interfaces without relying on decorative styles or excessive variation.
+Current primitive groups:
 
----
+- `fontFamily`
+- `fontSize`
+- `fontWeight`
+- `lineHeight`
+- `letterSpacing`
 
-## Type scale
+## Important Figma note
 
-The typography system is based on a fixed scale:
+For Figma variable generation:
 
-**12 / 14 / 16 / 18 / 20 / 24 / 30**
+- `fontSize`, `fontWeight`, and `lineHeight` are valid numeric candidates
+- `fontFamily` is source-only and should not become a Figma variable
+- `letterSpacing` should remain source-only unless we decide on a px-only storage strategy
 
-This scale is designed to:
-- support high information density
-- maintain a clear visual hierarchy
-- remain legible across dashboards and control interfaces
-- avoid unnecessary visual noise
+Current roles:
 
-The scale is intentionally limited.  
-New sizes should not be introduced unless a recurring and well-justified need appears.
+- `display`
+- `h1`
+- `h2`
+- `h3`
+- `h4`
+- `body`
+- `label`
+- `button`
+- `buttonCompact`
+- `input`
+- `caption`
+- `meta`
+- `navItem`
+- `overline`
+- `metric`
 
----
+## Role intent
 
-## Semantic roles
+### Display and headings
 
-Typography is applied using **semantic roles**, providing an abstraction over raw numeric values.
+- `display` for oversized dashboard hero numbers or headline callouts
+- `h1` for page-level titles
+- `h2` for section headers
+- `h3` and `h4` for widget and subgroup headers
 
-UI components reference typography tokens by intent, for example:
-- `type.ui.h3`
-- `type.ui.body`
-- `type.ui.caption`
+### Body and support
 
-This ensures that changes to the scale or hierarchy do not require changes in component logic.
+- `body` for readable operational content
+- `label` for field labels, chips, compact helper labels
+- `caption` for timestamps, helper copy, row metadata
+- `meta` for footer/system metadata that repeats across dense shells
+- `overline` for section headers such as rail grouping labels
 
-### Defined roles
+### Controls
 
-- **`type.ui.h1`** — page titles and top-level views  
-- **`type.ui.h2`** — section headers and major content blocks  
-- **`type.ui.h3`** — card titles and secondary headers  
-- **`type.ui.body`** — primary content and readable text  
-- **`type.ui.label`** — UI labels and form-related text  
-- **`type.ui.caption`** — metadata and secondary information  
+- `button` for standard actions
+- `buttonCompact` for dense controls in tables, widget headers, and rails
+- `input` for text-entry surfaces
+- `navItem` for persistent navigation labels where readability and scan speed matter
 
-Roles should be applied consistently across the interface.
-If a role feels ambiguous, the hierarchy should be clarified rather than overridden locally.
+### Metrics
 
----
+- `metric` for KPI values and dashboard numerics
 
-## Font weights
+## Decision rules
 
-Only two font weights are used:
+### Which role should I use?
 
-- **Regular (400)**
-- **Medium (500)**
+- page title → `h1`
+- widget title → `h4` or `label`
+- readable paragraph or descriptive line → `body`
+- compact support text → `caption`
+- footer or shell metadata → `meta`
+- navigation label → `navItem`
+- uppercase section marker → `overline`
+- standard button label → `button`
+- dense action label → `buttonCompact`
+- metric value → `metric`
 
-This constraint is intentional.
+### Should I create a new role?
 
-Limiting the number of font weights:
-- improves consistency
-- reduces visual noise
-- makes hierarchy rely on size and spacing rather than weight
-- simplifies implementation across platforms
+Only if the text has a stable product meaning that the current set cannot express.  
+Do not create new roles just because one screen wants a slightly different size.
 
-Heavier weights are avoided in order to preserve clarity in dense layouts.
+## Dashboard usage patterns
 
----
+### Widget
 
-## Line height
+- title → `h4`
+- helper/meta → `caption`
+- KPI value → `metric`
 
-Line height values are defined as **unitless multipliers** relative to the font size.
+### Monitoring row
 
-This approach:
-- scales naturally with typography size changes
-- behaves predictably in nested components
-- avoids hard-coding vertical rhythm into absolute values
+- primary row label → `body`
+- support label → `caption`
+- compact count or badge text → `label`
 
-Line height is applied via semantic tokens and should not be overridden at the component level.
+### Header rail
 
----
+- page title → `h1`
+- system status line → `caption`
+- action labels → `buttonCompact` or `button`
 
-## Typography scope
+### Sidebar navigation
 
-This system intentionally does not tokenize **font family** or **letter spacing**.
-
-### Font family
-
-Font family is defined at the application level and treated as a global platform decision.
-As long as a single primary UI font is used, introducing a font family token would add an extra abstraction layer without practical benefit.
-
-If multiple font families become a requirement (for example, brand variants or platform-specific typography), font family can be introduced as a token at that point.
-
----
-
-### Letter spacing
-
-Letter spacing is not tokenized because it is highly context-dependent.
-
-In product and operational interfaces:
-- tracking is typically neutral
-- variation is rare and situational
-- most text remains mixed-case and functional
-
-Introducing a global letter-spacing token would reduce clarity rather than improve it.
-
-Letter spacing may be introduced as a token if specific use cases appear, such as:
-- uppercase labels
-- status badges
-- monospace or tabular text
-
----
-
-## Summary
-
-The typography system prioritizes:
-- clarity over expressiveness
-- consistency over flexibility
-- semantic intent over visual tweaking
-
-Any changes to the system should be driven by recurring product needs rather than isolated design decisions.
+- navigation item label → `navItem`
+- section divider label → `overline`
+- footer system/meta line → `meta`
