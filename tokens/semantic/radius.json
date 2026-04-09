@@ -1,0 +1,9 @@
+{
+  "radius": {
+    "control": { "$value": "{radius.8}", "$type": "number" },
+    "card": { "$value": "{radius.12}", "$type": "number" },
+    "panel": { "$value": "{radius.12}", "$type": "number" },
+    "pill": { "$value": "{radius.999}", "$type": "number" },
+    "chip": { "$value": "{radius.10}", "$type": "number" }
+  }
+}
