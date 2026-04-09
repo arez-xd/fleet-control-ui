@@ -1,0 +1,43 @@
+{
+  "space": {
+    "inset": {
+      "xs": { "$value": "{space.8}", "$type": "number" },
+      "sm": { "$value": "{space.12}", "$type": "number" },
+      "md": { "$value": "{space.16}", "$type": "number" },
+      "lg": { "$value": "{space.20}", "$type": "number" },
+      "card": { "$value": "{space.20}", "$type": "number" },
+      "panel": { "$value": "{space.24}", "$type": "number" }
+    },
+    "stack": {
+      "xs": { "$value": "{space.4}", "$type": "number" },
+      "sm": { "$value": "{space.8}", "$type": "number" },
+      "md": { "$value": "{space.12}", "$type": "number" },
+      "lg": { "$value": "{space.16}", "$type": "number" },
+      "xl": { "$value": "{space.20}", "$type": "number" }
+    },
+    "cluster": {
+      "xs": { "$value": "{space.4}", "$type": "number" },
+      "sm": { "$value": "{space.8}", "$type": "number" },
+      "md": { "$value": "{space.12}", "$type": "number" }
+    },
+    "section": {
+      "sm": { "$value": "{space.16}", "$type": "number" },
+      "md": { "$value": "{space.24}", "$type": "number" },
+      "lg": { "$value": "{space.32}", "$type": "number" }
+    },
+    "control": {
+      "xs": { "$value": "{space.6}", "$type": "number" },
+      "sm": { "$value": "{space.8}", "$type": "number" },
+      "md": { "$value": "{space.12}", "$type": "number" }
+    },
+    "field": {
+      "x": { "$value": "{space.12}", "$type": "number" },
+      "y": { "$value": "{space.10}", "$type": "number" }
+    },
+    "list": {
+      "itemGap": { "$value": "{space.12}", "$type": "number" },
+      "rowInset": { "$value": "{space.16}", "$type": "number" }
+    }
+  }
+}
+
