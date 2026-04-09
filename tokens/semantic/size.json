@@ -1,0 +1,36 @@
+{
+  "size": {
+    "hitArea": {
+      "min": { "$value": "{size.44}", "$type": "number" }
+    },
+    "control": {
+      "height": {
+        "sm": { "$value": "{size.32}", "$type": "number" },
+        "md": { "$value": "{size.36}", "$type": "number" },
+        "lg": { "$value": "{size.40}", "$type": "number" }
+      }
+    },
+    "field": {
+      "height": {
+        "md": { "$value": "{size.40}", "$type": "number" }
+      }
+    },
+    "icon": {
+      "xs": { "$value": "{size.12}", "$type": "number" },
+      "sm": { "$value": "{size.14}", "$type": "number" },
+      "md": { "$value": "{size.16}", "$type": "number" },
+      "lg": { "$value": "{size.18}", "$type": "number" },
+      "xl": { "$value": "{size.20}", "$type": "number" }
+    },
+    "avatar": {
+      "sm": { "$value": "{size.32}", "$type": "number" },
+      "md": { "$value": "{size.40}", "$type": "number" }
+    },
+    "sidebar": {
+      "width": { "$value": "{size.248}", "$type": "number" }
+    },
+    "divider": {
+      "thin": { "$value": "{size.1}", "$type": "number" }
+    }
+  }
+}
