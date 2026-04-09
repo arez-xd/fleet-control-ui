@@ -1,0 +1,44 @@
+{
+  "border": {
+    "control": {
+      "default": {
+        "width": { "$value": "{stroke.width.default}", "$type": "number" },
+        "color": { "$value": "{color.border.default}", "$type": "color" }
+      },
+      "focused": {
+        "width": { "$value": "{stroke.width.focus}", "$type": "number" },
+        "color": { "$value": "{color.border.focus}", "$type": "color" }
+      },
+      "disabled": {
+        "width": { "$value": "{stroke.width.default}", "$type": "number" },
+        "color": { "$value": "{color.border.subtle}", "$type": "color" }
+      }
+    },
+    "separator": {
+      "default": {
+        "width": { "$value": "{stroke.width.default}", "$type": "number" },
+        "color": { "$value": "{color.border.default}", "$type": "color" }
+      }
+    },
+    "status": {
+      "error": {
+        "width": { "$value": "{stroke.width.default}", "$type": "number" },
+        "color": { "$value": "{color.border.status.error}", "$type": "color" }
+      },
+      "warning": {
+        "width": { "$value": "{stroke.width.default}", "$type": "number" },
+        "color": { "$value": "{color.border.status.warning}", "$type": "color" }
+      },
+      "success": {
+        "width": { "$value": "{stroke.width.default}", "$type": "number" },
+        "color": { "$value": "{color.border.status.success}", "$type": "color" }
+      }
+    },
+    "focus": {
+      "ring": {
+        "width": { "$value": "{stroke.width.focus}", "$type": "number" },
+        "color": { "$value": "{color.focus.ring}", "$type": "color" }
+      }
+    }
+  }
+}
