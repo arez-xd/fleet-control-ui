@@ -1,0 +1,10 @@
+{
+  "stroke": {
+    "width": {
+      "0": { "$value": 0, "$type": "number" },
+      "1": { "$value": 1, "$type": "number" },
+      "2": { "$value": 2, "$type": "number" },
+      "4": { "$value": 4, "$type": "number" }
+    }
+  }
+}
