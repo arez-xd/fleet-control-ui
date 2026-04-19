@@ -123,3 +123,10 @@ design-system/
 │
 └── figma/
     └── README.md
+```
+
+## License
+
+The source code in this repository is licensed under the MIT License.
+
+Brand names, logos, product names, visual identity elements, screenshots, and case-study content are provided for demonstration purposes only and are not included in the MIT License.
